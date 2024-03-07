@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CSS Grid e Flexbox</title>
+  </head>
+  <body>
+    <header>
+      <a href="#">Home</a>
+      <nav>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Usando Flexbox</h1>
+    <section id="flex1">
+      <div>
+        <img src="img/lobo1.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 1</p>
+      </div>
+      <div>
+        <img src="img/lobo2.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 2</p>
+      </div>
+      <div>
+        <img src="img/lobo3.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 3</p>
+      </div>
+      <div>
+        <img src="img/lobo3.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 4</p>
+      </div>
+      <div>
+        <img src="img/lobo1.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 5</p>
+      </div>
+      <div>
+        <img src="img/lobo2.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 6</p>
+      </div>
+    </section>
+
+    <h1>Usando Grid Layout</h1>
+    <section id="grid1">
+      <div>
+        <img src="img/lobo1.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 1</p>
+      </div>
+      <div>
+        <img src="img/lobo2.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 2</p>
+      </div>
+      <div>
+        <img src="img/lobo3.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 3</p>
+      </div>
+      <div>
+        <img src="img/lobo3.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 4</p>
+      </div>
+      <div>
+        <img src="img/lobo1.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 5</p>
+      </div>
+      <div>
+        <img src="img/lobo2.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 6</p>
+      </div>
+      <div>
+        <img src="img/lobo3.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 7</p>
+      </div>
+      <div>
+        <img src="img/lobo1.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 8</p>
+      </div>
+      <div>
+        <img src="img/lobo2.jpg" alt="lobo 1">
+        <p>Legenda: Lobo 9</p>
+      </div>
+      <div id="anuncio">
+        <img src="img/lobo2.jpg" alt="lobo 1">
+        <p>Anuncios</p>
+      </div>
+    </section>
+  </body>
+</html>
