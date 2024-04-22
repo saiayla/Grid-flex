@@ -157,7 +157,8 @@ a:hover {
 
 #course_categories {
     text-align: center;
-
+    display: fle;
+    justify-content: center;
 }
 
 #course_categories > h2 {
@@ -201,11 +202,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #corse_categories i {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 #course_categories > div > div:hover i {
     font-size: 3rem;
