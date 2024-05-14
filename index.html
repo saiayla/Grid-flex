@@ -1,30 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo_JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo de Eventos e Manipuladores de Eventos</title>
     <script src="script.js"></script>
 </head>
 <body>
-    <form>
-        <label for="n1">Número 1:</label><br/>
-        <input type="number" id="n1" name="n1" value=0><br/><br/>
-        <label for="n2">Número 2:</label><br/>
-        <input type="number" id="n2" name="n2" value="0"><br/><br/>
-      <label for="operation">Selecione a operação</label>
-      <select name="operation" id="operation">
-        <option value="somar">Somar</option>
-        <option value="subtrair">Subtrair</option>
-        <option value="multiplicar">Multiplicar</option>
-        <option value="dividir">Dividir</option>
-      </select>
+    <form onsubmit="addTask(event)">
+        <label for="task">Tarefa: </label>
+        <input type="text" name="task" id="task" onfocus="clearMessage()">
+        <button type="button" id="btn" onclick="addTask(event)">Incluir</button>
+        <p id="message">&nbsp;</p>
+        <ul id="tasklist"></ul>
     </form>
-  <br/>
-  <input type="button" onclick="calcular()" value="Calcular" />
-
-    <p>Clique no Botão Calcular para a Mágica Acontecer!</p>
 </body>
-
 </html>
