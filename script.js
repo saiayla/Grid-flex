@@ -1,26 +1,19 @@
-function addTask(e) {
-    e.preventDefault();
-    let tarefa = document.getElementById('task');
+function incluir() {
+    let description = document.getElementById('description');
 
-    if(tarefa.value.trim() != '') {
-        let novo_li = document.createElement('li');
-        novo_li.innerText = tarefa.value;
-
-        let lista = document.getElementById('tasklist');
-        lista.appendChild(novo_li);
-        tarefa.value='';
+    if(description.value = '') {
+        let message_type = docunt.getElementById('message_type');
+        message_type_type.innerText = 'Erro';
 
         let message = document.getElementById('message');
-        message.innerText = 'Sucesso: Tarefa incluída!' ;
-        message.className = 'sucess-message';
-    } else {
-        let message = document.getElementById('message');
-        message.innerText = 'Erro: Preencha a descrição da tarefa!' ;
-        message.className = 'error-message'; 
-   }
-};
+        message.ineerText = 'Você precisa descrever a nova tarefa.';  
+        
+        let alert = document.getElementById('alert');
+        alert.style.display = 'block';
+;    }
+}
 
-function clearMessage() {
-    let message = document.getElementById('message');
-    message.innerHTML = '&nbsp;';
+function closeMessage() {
+    let alert = document.getElementById('alert');
+    alert.style.display = 'none'
 }

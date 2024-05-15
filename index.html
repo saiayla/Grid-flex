@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Exemplo de Eventos e Manipuladores de Eventos</title>
+    <title>ToDo SPA</title>
     <script src="script.js"></script>
 </head>
 <body>
-    <form onsubmit="addTask(event)">
-        <label for="task">Tarefa: </label>
-        <input type="text" name="task" id="task" onfocus="clearMessage()">
-        <button type="button" id="btn" onclick="addTask(event)">Incluir</button>
-        <p id="message">&nbsp;</p>
-        <ul id="tasklist"></ul>
-    </form>
+    <header>
+        <h1>Seu Gestor de Tarefas Automático</h1>
+        <p>Não sabe o que fazer? Deixe seu computador decidir por você.....</p>
+    </header>
+    <main>
+        <button disabled>O que eu devo fazer?</button>
+
+        <div>
+            <p><strong>Suas opções</strong></p>
+            <a href="">Remover todods</a>
+        </div>
+        <div>
+            <p>Insira a primeira tarefa para começar.....</p>
+        </div>
+        <form>
+            <input type="text" id="description">
+            <button type="button" onclick="incluir()">Incluir</button>
+        </form>
+        <div id="alert">
+            <p id="message"><strong id="message_type">Tipo de mensagem: </strong>Mensagem para mostrar ao usuário</p>
+            <span class="closebtn" onclick="closeMessage()">&times;</span>
+        </div>
+    </main>
 </body>
 </html>
