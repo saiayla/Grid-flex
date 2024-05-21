@@ -1,11 +1,11 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
-body {
+body{
     background-color: #333745;
 }
 
@@ -36,10 +36,10 @@ main > button {
     border-radius: 1rem;
     border: none;
     cursor: pointer;
-    border-bottom: 0.4rem solid #693CAD;
+    border-bottom: 0.4rem solid #693cad;
 }
 
-main > button:disabled {
+main > button:disabled{
     opacity: 0.5;
     cursor: not-allowed;
 }
@@ -49,19 +49,18 @@ main > div {
 }
 
 main > div > div:nth-child(1) {
-    display: flex;
     background-color: #3C4251;
+    display: flex;
     color: #a5afd7;
-    padding: 0,8rem 1.6rem;
+    padding: 0.8rem 1.6rem;
     justify-content: space-between;
 }
 
-main > div > div:nth-child(1) > a {
+main > div > div:nth-child(1) > a{
     text-decoration: none;
     color: #a5afd7;
 }
-
-main > div > div:nth-child(1) > a:hover {
+main > div > div:nth-child(1) > a:hover{
     color: white;
 }
 
@@ -69,6 +68,7 @@ main > div > div:nth-child(2) {
     background-color: #464B5E;
     color: #a5afd7;
     text-align: center;
+    padding: 1.6rem;
     border-bottom: 1px solid #5C627B;
 }
 
@@ -80,12 +80,12 @@ main > div > form {
 }
 
 main > div > form > input {
-    background-color: #333745;
-    border: none;
-    width: 75%;
-    color: #a5afd7;
-    padding: 1rem;
-    border-bottom: 0.2rem solid #1D2028;
+     background-color: #333745;
+     border: none;
+     width: 75%;
+     color: #a5afd7;
+     padding: 1rem;
+     border-bottom: 0.2rem solid #1D2028;
 }
 
 main > div > form > button {
@@ -95,16 +95,15 @@ main > div > form > button {
     color: white;
     border: none;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     opacity: 0.8;
 }
-
-main > div > form > button {
+main > div > form > button:hover{
     opacity: 1;
 }
 
-#arlet {
+#alert {
     width: 70vw;
     padding: 1rem;
     background-color: red;
@@ -115,17 +114,15 @@ main > div > form > button {
     font-size: 1rem;
     display: none;
 }
-.closebtn {
+
+.closebtn{
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
     transition: 0.5s;
 }
-
-.closebtn:hover {
-    color: grey;
+.closebtn:hover{
+    color: gray;
 }
-
-/*https://ufes.es/aula1505*/
 
