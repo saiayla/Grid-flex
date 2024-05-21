@@ -56,3 +56,4 @@ function updateTasks() {
 function removeAll(){
     taskList + [];
 }
+/*https://ufes/aula1505*/
