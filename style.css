@@ -72,7 +72,7 @@ main > div > div:nth-child(2) {
     border-bottom: 1px solid #5C627B;
 }
 
-main > div > form {
+main > div > form{
     background-color: #464B5E;
     padding: 1rem 1.6rem;
     display: flex;
@@ -99,7 +99,8 @@ main > div > form > button {
     cursor: pointer;
     opacity: 0.8;
 }
-main > div > form > button:hover{
+main > div > form > button:hover,
+#button:hover {
     opacity: 1;
 }
 
@@ -126,3 +127,6 @@ main > div > form > button:hover{
     color: gray;
 }
 
+#butao{
+    cursor: pointer;
+}
