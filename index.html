@@ -7,6 +7,7 @@
     <title>ToDo SPA</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -14,11 +15,16 @@
         <p>Não sabe o que fazer? Deixe seu computador decidir por vc....</p>
       </header>
       <main>
-        <button id="button" disabled>O que eu devo fazer?</button>
+        <button id="button" disabled onclick="highlightTask()">O que eu devo fazer?</button>
       
         <div>
-          <div>
+          <div id="filtrar">
             <p><strong>Suas Opções</strong></p>
+            <div>
+            <label for="search"></label>
+            <input type="search" id="search" placeholder="Buscar">
+            <button id="buscar" onclick="filterTask()"><i class="fa fa-search"></i></button>
+          </div>
             <a id="butao" onclick="removeAll()"> Remover todos</a>
           </div>
           <div id="tasks">
