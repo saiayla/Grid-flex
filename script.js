@@ -1,5 +1,12 @@
 let taskList = [];
 
+function loadTasks() {
+    let list = localStorage.getItem('taskList');
+    taskList = list ? JSON.parse(list) : []
+
+    updateTasks();
+}
+
 function addTask(event) {
     event.preventDefault();
     let description = document.getElementById('description');
@@ -8,7 +15,17 @@ function addTask(event) {
     } else {
         taskList.push(description.value);
         description.value = '';
+        localStorage.setItem('taskList', JSON.stringify('taskList'));
         updateTasks();
+    }
+}
+
+function filterTask() {
+    let search = document.getElementById('search');
+    let taskFiltered = taskList.filter(callbackFn);
+
+    if(search === taskFiltered) {
+        return taskFiltered;
     }
 }
 
@@ -59,6 +76,7 @@ function updateTasks() {
 
 function removeAll() {
     taskList = [];
+    localStorage.setItem('taskList', JSON.stringify('taskList'));
     updateTasks();
 }
 
